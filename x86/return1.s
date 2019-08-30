@@ -1,3 +1,4 @@
+#exit(1)
 .section .text
 .global _start
 _start:

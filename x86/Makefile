@@ -3,8 +3,9 @@ CFLAGS = -m32 -nostdlib -Wall
 PROGRAMS = ${wildcard *.s}
 TARGETS = $(PROGRAMS:.s=.out)
 
-all:
-	$(CC) $(CFLAGS) $(PROGRAMS) -o $(TARGETS)
+all:$(TARGETS)
+%.out:%.s
+	$(CC) $(CFLAGS) -o $@  $<
 
 clean:
 	rm *.out
