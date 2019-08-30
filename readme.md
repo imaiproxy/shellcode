@@ -1,4 +1,4 @@
-hellcode
+shellcode
 ----
 Usage
 ----
